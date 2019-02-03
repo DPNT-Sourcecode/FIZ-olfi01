@@ -14,8 +14,6 @@ def fizz_buzz(number):
 	fx_dlx=dlx and ((div3 or in3) and (div5 or in5))
 	if fx_dlx:
 		return "fizz buzz deluxe"
-	elif dlx:
-		return "deluxe"
 	elif (div3 or in3) and (div5 or in5):
 		return "fizz buzz"
 	elif div3 or in3:
@@ -28,9 +26,12 @@ def fizz_buzz(number):
 			return "buzz deluxe"
 		else:
 			return "buzz"
+	elif dlx:
+		return "deluxe"
 	else:
 		return str(number)
 	raise NotImplementedError()
+
 
 
 
