@@ -19,11 +19,18 @@ def fizz_buzz(number):
 	elif (div3 or in3) and (div5 or in5):
 		return "fizz buzz"
 	elif div3 or in3:
-		return "fizz"
+		if dlx:
+			return "fizz deluxe"
+		else:
+			return "fizz"
 	elif div5 or in5:
-		return "buzz"
+		if dlx:
+			return "buzz deluxe"
+		else:
+			return "buzz"
 	else:
 		return str(number)
 	raise NotImplementedError()
+
 
 
