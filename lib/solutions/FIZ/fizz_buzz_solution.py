@@ -1,6 +1,7 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
 	a=number
+	isOdd=number%2!=0
 	div3=number%3==0
 	div5=number%5==0
 	in3=str(3) in str(number)
@@ -31,6 +32,7 @@ def fizz_buzz(number):
 	else:
 		return str(number)
 	raise NotImplementedError()
+
 
 
 
