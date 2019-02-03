@@ -15,30 +15,30 @@ def fizz_buzz(number):
 	dlx= dlx3 and isOdd #this is fake delux
 	fx_dlx=dlx and ((div3 or in3) and (div5 or in5))
 	if (div3 or in3) and (div5 or in5):
-        if dlx:
-            return "fizz buzz fake deluxe"
-        elif dlx3:
-            return "fizz buzz deluxe"
-        else:
-            return "fizz buzz"
-    elif div3 or in3:
-        if dlx:
-            return "fizz fake deluxe"
-        elif dlx3:
-            return "fizz deluxe"
-        else:
-            return "fizz"
-    elif div5 or in5:
-        if dlx:
-            return "buzz fake deluxe"
-        elif dlx3:
-            return "buzz deluxe"
-        else:
-            return "buzz"
-    elif dlx3:
-        if isOdd:
-            return "fake deluxe"
-        else:
-            return "deluxe"
-    else:
-        return str(number)
+		if dlx:
+			return "fizz buzz fake deluxe"
+		elif dlx3:
+			return "fizz buzz deluxe"
+		else:
+			return "fizz buzz"
+	elif div3 or in3:
+		if dlx:
+			return "fizz fake deluxe"
+		elif dlx3:
+			return "fizz deluxe"
+		else:
+			return "fizz"
+	elif div5 or in5:
+		if dlx:
+			return "buzz fake deluxe"
+		elif dlx3:
+			return "buzz deluxe"
+		else:
+			return "buzz"
+	elif dlx3:
+		if isOdd:
+			return "fake deluxe"
+		else:
+			return "deluxe"
+	else:
+		return str(number)
