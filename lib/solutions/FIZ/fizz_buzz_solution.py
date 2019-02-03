@@ -32,8 +32,3 @@ def fizz_buzz(number):
 	else:
 		return str(number)
 	raise NotImplementedError()
-
-
-
-
-
