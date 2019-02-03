@@ -6,7 +6,10 @@ def fizz_buzz(number):
 		return "fizz"
 	elif div5:
 		return "buzz"
+	elif div5 and div3:
+		return "fizz buzz"
 	else:
 		return str(number)
 	raise NotImplementedError()
+
 
