@@ -11,7 +11,10 @@ def fizz_buzz(number):
 	sm=len(set(ll)) == 1
 	dlx=(sm) and (number>10)
 	if (div3 or in3) and (div5 or in5):
-		return "fizz buzz"
+		if dlx:
+			return "fizz buzz deluxe"
+		elif:
+			return "fizz buzz"
 	elif div3 or in3:
 		return "fizz"
 	elif div5 or in5:
@@ -19,4 +22,5 @@ def fizz_buzz(number):
 	else:
 		return str(number)
 	raise NotImplementedError()
+
 
