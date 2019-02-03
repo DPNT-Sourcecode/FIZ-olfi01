@@ -11,24 +11,34 @@ def fizz_buzz(number):
 		ll.append(a%10)
 		a=a//10
 	sm=len(set(ll)) == 1
-	dlx=(sm) and (number>10)
+	dlx3=(sm) and (number>10)
+	dlx= dlx3 and isOdd #this is fake delux
 	fx_dlx=dlx and ((div3 or in3) and (div5 or in5))
-	if fx_dlx:
-		return "fizz buzz deluxe"
-	elif (div3 or in3) and (div5 or in5):
-		return "fizz buzz"
-	elif div3 or in3:
-		if dlx:
-			return "fizz deluxe"
-		else:
-			return "fizz"
-	elif div5 or in5:
-		if dlx:
-			return "buzz deluxe"
-		else:
-			return "buzz"
-	elif dlx:
-		return "deluxe"
-	else:
-		return str(number)
-	raise NotImplementedError()
+	if (div3 or in3) and (div5 or in5):
+        if dlx:
+            return "fizz buzz fake deluxe"
+        elif dlx3:
+            return "fizz buzz deluxe"
+        else:
+            return "fizz buzz"
+    elif div3 or in3:
+        if dlx:
+            return "fizz fake deluxe"
+        elif dlx3:
+            return "fizz deluxe"
+        else:
+            return "fizz"
+    elif div5 or in5:
+        if dlx:
+            return "buzz fake deluxe"
+        elif dlx3:
+            return "buzz deluxe"
+        else:
+            return "buzz"
+    elif dlx3:
+        if isOdd:
+            return "fake deluxe"
+        else:
+            return "deluxe"
+    else:
+        return str(number)
